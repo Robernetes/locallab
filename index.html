@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main.js"></script>
+    <title>Laboratorio</title>
+</head>
+<body>
+    <div class="container" id="tabs">
+      <!-- Section del header para colocar titulo y logo -->
+        <header class="header">
+            <span>Locallab</span>
+        </header>
+
+        <section class="main">
+              <div id="tab-1">
+                <form id="form" action="">
+                    <label for="soluto">Soluto</label>
+                    <input type="text" name="" id="soluto" placeholder="Gramos de soluto">
+                    <label for="solucion">Solucion</label>
+                    <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
+                    <div class="resMol" id="resp"></div>
+                    <input type="button" value="Enviar" onclick="mol(), limpiar2();">
+                </form>
+              </div>
+              <div id="tab-2">
+                <form id="form" action="">
+                    <label for="soluto">Soluto</label>
+                    <input type="text" name="" id="soluto" placeholder="Gramos de soluto">
+                    <label for="solucion">Solucion</label>
+                    <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
+                    <div class="resMol" id="resp"></div>
+                    <input type="button" value="Enviar" onclick="mol(), limpiar2();">
+                </form>
+              </div>
+              <div id="tab-3">
+                <form id="form" action="">
+                    <label for="soluto">Soluto</label>
+                    <input type="text" name="" id="soluto" placeholder="Gramos de soluto">
+                    <label for="solucion">Solucion</label>
+                    <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
+                    <div class="resMol" id="resp"></div>
+                    <input type="button" value="Enviar" onclick="mol(), limpiar2();">
+                </form>
+              </div>
+              <div id="tab-4">
+                <form id="form" action="">
+                    <label for="soluto">Soluto</label>
+                    <input type="text" name="" id="soluto" placeholder="Gramos de soluto">
+                    <label for="solucion">Solucion</label>
+                    <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
+                    <div class="resMol" id="resp"></div>
+                    <input type="button" value="Enviar" onclick="mol(), limpiar2();">
+                </form>
+              </div>
+        </section>
+        <!-- Aside para section de botones -->
+        <aside class="aside">
+            <ul class="cab">
+                <li><a href="#tab-1">Molaridad (M)</a></li>
+                <li><a href="#tab-2">modalidad (m)</a></li>
+                <li><a href="#tab-3">Fraccion Molar Xa</a></li>
+                <li><a href="#tab-4">% m/m</a></li>
+                <li><a href="#tab-5">% m/v</a></li>
+                <li><a href="#tab-6">% v/v</a></li>
+              </ul>
+        </aside>
+        <!-- Section del footer -->
+        <footer class="footer">
+
+        </footer>
+    </div>
+<!-- Aqui acaba el div container -->
+</body>
+</html>

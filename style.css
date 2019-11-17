@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60%;
+    height: 700px;
+    background: #ccc;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1fr;
+    grid-template-rows: 2fr 5fr .7fr;
+    grid-gap: .8em;
+    margin: auto;
+
+}
+
+.header{
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: #2196F3;
+}
+
+.header > span{
+    display: grid;
+    grid-column: 2/3;
+    font-size: 60px;
+    color: snow;
+    /* justify-content: center; */
+    align-content: center;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+.main{
+    display: grid;
+    grid-column: 2/-1;
+    grid-row: 2/3;
+    background: #fff;
+    box-shadow: 0 0 8px 0 #ccc;
+}
+
+.aside{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: #fff;
+    color: black;
+    box-shadow: 0 0 8px 0 #ccc;
+    overflow: auto;
+}
+
+.footer{
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    background: #333;
+}
+
+.aside > ul{
+    background: #fff;
+    clear: left;
+}
+
+.resMol{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 225px;
+    height: 100px;
+    background: #fff;
+    border: 2px solid #007FFF;
+    color: #4CAF50;
+    font-size: 20px;
+}
+#form{
+  width: 250px;
+  padding: 10px;
+  /* border: 2px solid #ccc; */
+  box-shadow: 0 0 8px 0 #ccc;
+  box-sizing: border-box;
+}
+#form > label, input{
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#form > input[type="button"]{
+  width: 100%;
+}
+#form > input[type="button"]:hover{
+  background: dodgerblue;
+  color: snow;
+  cursor: pointer;
+}
+#form > div{
+  margin-bottom: 10px;
+
+}
