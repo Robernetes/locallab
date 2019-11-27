@@ -1,24 +1,27 @@
-function mol(){
-    var soluto = parseFloat(document.getElementById('soluto').value);
-    var solucion = parseFloat(document.getElementById('solucion').value);
-    var resMola = (soluto/solucion) * 100;
-    console.log(resMola);
-    document.getElementById('resp').innerText = "Molaridad "+resMola.toFixed(2);
-}
 
-function limpiar2(){
-    document.getElementById('soluto').value = "";
-    document.getElementById('solucion').value = "";
-}
+  function mol(){
+      var soluto = parseFloat(document.getElementById('soluto').value);
+      var solucion = parseFloat(document.getElementById('solucion').value);
+      var resMola = (soluto/solucion) * 100;
+      console.log(resMola);
+      document.getElementById('resp').innerText = "Molaridad "+resMola.toFixed(2);
+  }
 
-function limpiar(){
-    $('#soluto').click(function(){
-        $('input[type="text"]').val('');
-    });
-}
+$(document).ready(function() {
+  function limpiar2(){
+      document.getElementById('soluto').value = "";
+      document.getElementById('solucion').value = "";
+  }
 
+  $('#bt-send').on('click',limpiar2,mol);
 
+  $( function() {
+      $( "#tabs-1", ).tabs();
+  });
 
-$( function() {
-    $( "#tabs" ).tabs();
+  $( function() {
+      $( "#tabs-2", ).tabs();
+  });
+
 });
+// Hola Docblockr:Decorate

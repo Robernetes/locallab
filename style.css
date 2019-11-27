@@ -2,40 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --colorPrimario: dodgerblue;
+    --colorSecundario: #193455;
 }
-
+body{
+  background: #ccc;
+}
 .container{
-    width: 60%;
+    width: 85%;
     height: 700px;
     background: #ccc;
     display: grid;
-    grid-template-columns: 1.5fr 3fr 1fr;
-    grid-template-rows: 2fr 5fr .7fr;
-    grid-gap: .8em;
+    grid-template-columns: 1.2fr 3fr 1fr;
+    grid-template-rows:2fr .5fr 5fr .7fr;
+    grid-gap: .9em;
     margin: auto;
-
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
-
+.container-2{
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  grid-template-columns: 1.2fr 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+.container-2 > #tb1{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1;
+  grid-template-columns: 1.2fr 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+.container-2 > #tb2{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1;
+  grid-template-columns: 1.2fr 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+/* .container-2 > div > section{
+  display: grid;
+  grid-column: 2/-1;
+  grid-row: 1;
+}
+.container-2 > div > aside{
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1;
+} */
 .header{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/-1;
     grid-row: 1/2;
-    background: #2196F3;
+    background: var(--colorPrimario, darkorange);
+    font-family: Impact;
 }
 
-.header > span{
-    display: grid;
+.header > h1{
+    display: inline-block;
     grid-column: 2/3;
-    font-size: 60px;
+    font-size: 50px;
     color: snow;
     /* justify-content: center; */
     align-content: center;
-    box-shadow: 0 0 8px 0 dodgerblue;
+    /* box-shadow: 0 0 8px 0 dodgerblue; */
+    margin: auto;
+}
+.header h1 span{
+  color: var(--colorSecundario);
+  font-family: Impact;
+}
+header > #box-img{
+  display: grid;
+  width: 300px;
+  height: 200px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  /* background: red; */
+}
+header > #box-img > #logo{
+  width: 200px;
+  height: 190px;
+  margin: 0 auto;
+}
+#sections{
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  background: #fff;
 }
 .main{
     display: grid;
-    grid-column: 2/-1;
-    grid-row: 2/3;
+    grid-column: 2/4 !important;
+    grid-row: 1;
     background: #fff;
     box-shadow: 0 0 8px 0 #ccc;
 }
@@ -43,7 +108,7 @@
 .aside{
     display: grid;
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 1;
     background: #fff;
     color: black;
     box-shadow: 0 0 8px 0 #ccc;
@@ -51,10 +116,10 @@
 }
 
 .footer{
-    display: grid;
-    grid-column: 1/-1;
-    grid-row: 3/4;
-    background: #333;
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  background: #333;
 }
 
 .aside > ul{
@@ -66,7 +131,7 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    width: 225px;
+    width: 80%;
     height: 100px;
     background: #fff;
     border: 2px solid #007FFF;
@@ -74,7 +139,7 @@
     font-size: 20px;
 }
 #form{
-  width: 250px;
+  width: 230px;
   padding: 10px;
   /* border: 2px solid #ccc; */
   box-shadow: 0 0 8px 0 #ccc;
@@ -86,7 +151,8 @@
   margin-bottom: 10px;
 }
 #form > input[type="button"]{
-  width: 100%;
+  background: dodgerblue;
+  width: 80%;
 }
 #form > input[type="button"]:hover{
   background: dodgerblue;
@@ -95,5 +161,15 @@
 }
 #form > div{
   margin-bottom: 10px;
-
+}
+/* #tabs2{
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  background: forestgreen;
+} */
+.list-btn > li > a{
+  width: 77px;
+  text-align: center;
+  margin: auto !important;
 }
