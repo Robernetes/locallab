@@ -13,6 +13,7 @@ a{
 }
 .container{
     width: 85%;
+    min-width: 497px;
     height: 700px;
     background: #ccc;
     display: grid;
@@ -99,14 +100,20 @@ header > #box-img > #logo{
   display: grid;
   grid-column: 2/4 !important;
   grid-row: 1;
+  min-width: 249px;
   background: #fff;
   box-shadow: 0 0 8px 0 #ccc;
+}
+.main h2{
+  margin-left: 50px;
+  padding-bottom: 5px;
 }
 
 .aside{
     display: grid;
     grid-column: 1/2;
     grid-row: 1;
+    min-width: 97px;
     background: #fff;
     color: black;
     box-shadow: 0 0 8px 0 #ccc;
@@ -171,3 +178,6 @@ header > #box-img > #logo{
   text-align: center;
   margin: auto !important;
 }
+/* @media screen and (min-width: 320px) and (max-width: 414px){
+
+} */

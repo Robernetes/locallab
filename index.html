@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -24,9 +25,9 @@
           <section id="sections">
             <nav>
               <ul>
-                <li><a href="#tb1">Section 1</a></li>
-                <li><a href="#tb2">Section 2</a></li>
-                <li><a href="#tb3">Section 3</a></li>
+                <li><a href="#tb1">Disoluciones</a></li>
+                <li><a href="#tb2">Moles/Gramos</a></li>
+                <li><a href="#tb3">Pronto</a></li>
               </ul>
             </nav>
           </section>
@@ -37,36 +38,37 @@
           <div id="tb1">
             <section class="main">
                   <div id="tab-1">
-                    <h2>Contenido 1</h2>
+                    <h2>Molaridad</h2>
                     <form id="form" action="">
                         <label for="soluto">Soluto</label>
-                        <input type="text" name="" id="soluto" placeholder="Gramos de soluto">
+                        <input type="text" name="" id="soluto" placeholder="Moles de soluto">
                         <label for="solucion">Solucion</label>
-                        <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
+                        <input type="text" name="" id="solucion" placeholder="V de disolucion (L)">
                         <div class="resMol" id="resp"></div>
-                        <input type="button" value="Enviar" onclick="mol(), limpiar2();">
+                        <input id="bt-molaridad" type="button" value="Enviar" onclick="molaridad();">
                     </form>
                   </div>
                   <div id="tab-2">
-                    <h2>Contenido 2</h2>
-                    <!-- <form id="form" action="">
+                    <h2>molalidad</h2>
+                    <form id="form" action="">
                         <label for="soluto">Soluto</label>
-                        <input type="text" name="" id="soluto" placeholder="Gramos de soluto">
+                        <input type="text" name="" id="solutoMola" placeholder="Moles de soluto">
                         <label for="solucion">Solucion</label>
-                        <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
-                        <div class="resMol" id="resp"></div>
-                        <input type="button" value="Enviar" onclick="mol(), limpiar2();">
-                    </form> -->
+                        <input type="text" name="" id="entryKg" placeholder="Kg de solucion">
+                        <div class="resMol" id="respMolalidad"></div>
+                        <input type="button" value="Enviar" onclick="molalidad();">
+                    </form>
                   </div>
                   <div id="tab-3">
-                    <!-- <form id="form" action="">
-                        <label for="soluto">Soluto</label>
-                        <input type="text" name="" id="soluto" placeholder="Gramos de soluto">
-                        <label for="solucion">Solucion</label>
-                        <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
+                    <h2>Fracción Masa Masa</h2>
+                    <form id="form" action="">
+                        <label for="solutoMM">Soluto</label>
+                        <input type="text" name="" id="solutoMM" placeholder="Gramos de soluto">
+                        <label for="solucion">Solvente</label>
+                        <input type="text" name="" id="solucionMM" placeholder="Gramos de solucion">
                         <div class="resMol" id="resp"></div>
-                        <input type="button" value="Enviar" onclick="mol(), limpiar2();">
-                    </form> -->
+                        <input type="button" value="Enviar" onclick="">
+                    </form>
                   </div>
                   <div id="tab-4">
                     <!-- <form id="form" action="">
@@ -84,8 +86,8 @@
                 <ul class="list-btn">
                     <li><a href="#tab-1"name="Molaridad">(M)</a></li>
                     <li><a href="#tab-2">(m)</a></li>
-                    <li><a href="#tab-3">FM Xa</a></li>
-                    <li><a href="#tab-4">% m/m</a></li>
+                    <li><a href="#tab-3">% m/m</a></li>
+                    <li><a href="#tab-4">% m/v</a></li>
                   </ul>
             </aside>
           </div>
@@ -100,7 +102,7 @@
                         <label for="solucion">Solucion</label>
                         <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
                         <div class="resMol" id="resp"></div>
-                        <input type="button" value="Enviar" onclick="mol(), limpiar2();">
+                        <input type="button" value="Enviar" >
                     </form>
                   </div>
                   <div id="tab-2">
@@ -156,7 +158,7 @@
                         <label for="solucion">Solucion</label>
                         <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
                         <div class="resMol" id="resp"></div>
-                        <input type="button" value="Enviar" onclick="mol(), limpiar2();">
+                        <input type="button" value="Enviar" >
                     </form>
                   </div>
                   <div id="tab-2">
