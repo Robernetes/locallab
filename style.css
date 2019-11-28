@@ -8,6 +8,9 @@
 body{
   background: #ccc;
 }
+a{
+  background: var(colorPrimario);
+}
 .container{
     width: 85%;
     height: 700px;
@@ -27,24 +30,17 @@ body{
   grid-template-columns: 1.2fr 3fr 1fr;
   grid-template-rows: 1fr;
 }
-.container-2 > #tb1{
-  margin: 0;
-  padding: 0;
+.container-2 > #tb1, #tb2, #tb3{
+  /* margin: 0;
+  padding: 0; */
   display: grid;
   grid-column: 1/-1;
   grid-row: 1;
   grid-template-columns: 1.2fr 3fr 1fr;
   grid-template-rows: 1fr;
 }
-.container-2 > #tb2{
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-column: 1/-1;
-  grid-row: 1;
-  grid-template-columns: 1.2fr 3fr 1fr;
-  grid-template-rows: 1fr;
-}
+
+
 /* .container-2 > div > section{
   display: grid;
   grid-column: 2/-1;
@@ -98,11 +94,13 @@ header > #box-img > #logo{
   background: #fff;
 }
 .main{
-    display: grid;
-    grid-column: 2/4 !important;
-    grid-row: 1;
-    background: #fff;
-    box-shadow: 0 0 8px 0 #ccc;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-column: 2/4 !important;
+  grid-row: 1;
+  background: #fff;
+  box-shadow: 0 0 8px 0 #ccc;
 }
 
 .aside{

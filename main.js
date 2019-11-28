@@ -16,12 +16,23 @@ $(document).ready(function() {
   $('#bt-send').on('click',limpiar2,mol);
 
   $( function() {
-      $( "#tabs-1", ).tabs();
+      $( "#tabs-1" ).tabs();
   });
 
   $( function() {
-      $( "#tabs-2", ).tabs();
+      $( "#tabs-2" ).tabs();
+  });
+
+  $( function() {
+      $( "#tb1" ).tabs();
+  });
+
+  $( function() {
+      $( "#tb2" ).tabs();
+  });
+
+  $( function() {
+      $( "#tb3" ).tabs();
   });
 
 });
-// Hola Docblockr:Decorate
