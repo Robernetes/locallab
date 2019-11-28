@@ -31,8 +31,8 @@ a{
   grid-template-rows: 1fr;
 }
 .container-2 > #tb1, #tb2, #tb3{
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-column: 1/-1;
   grid-row: 1;
