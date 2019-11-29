@@ -101,7 +101,46 @@ function normalidad(){
     };
     limpiar5();
 }
-
+//Funcion para limpiar imputs de moles a gramos
+function limpiarG(){
+    document.getElementById('Moles').value = "";
+    document.getElementById('pMolecular').value = "";
+    console.log('Limpiar ready');
+}
+//Funcion para convertir moles a gramos
+function molesTog(){
+    var moles1 = parseFloat(document.getElementById('Moles').value);
+    var pMol = parseFloat(document.getElementById('pMolecular').value);
+    var resGramos = (moles1 * pMol) / 1;
+    console.log(resGramos);
+    console.log("Molalidad ready");
+    if(isNaN(resGramos)){
+        document.getElementById('respG').innerText = "Ingresa valores ";
+    }else{
+        document.getElementById('respG').innerText = resGramos.toFixed(2)+ " g";
+    };
+    limpiarG();
+}
+//Funcion para limpiar los imputs de gramos a moles
+function limpiarM(){
+    document.getElementById('gramosF').value = "";
+    document.getElementById('pMolecular2').value = "";
+    console.log('Limpiar ready');
+}
+//Funcion para convertir de gramos a moles
+function gramosToMol(){
+    var gramosFor = parseFloat(document.getElementById('gramosF').value);
+    var pMol2 = parseFloat(document.getElementById('pMolecular2').value);
+    var resMoles = (gramosFor * 1) / pMol2;
+    console.log(resMoles);
+    console.log("Molalidad ready");
+    if(isNaN(resMoles)){
+        document.getElementById('respMoles').innerText = "Ingresa valores ";
+    }else{
+        document.getElementById('respMoles').innerText = resMoles.toFixed(2)+ " Moles";
+    };
+    limpiarM();
+}
 
 
 $(document).ready(function() {
