@@ -15,7 +15,7 @@ a{
 .container{
     width: 85%;
     min-width: 497px;
-    height: 1000px;
+    height: 1030px;
     background: #ccc;
     display: grid;
     grid-template-columns: 1.2fr 3fr 1fr;
@@ -162,7 +162,7 @@ header > #box-img > #logo{
 }
 .footer div > span{
   position: absolute;
-  left: 19%;
+  left: 15%;
   bottom: 7px;
 }
 .footer div p{
