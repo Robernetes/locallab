@@ -9,12 +9,13 @@ body{
   background: #ccc;
 }
 a{
+  text-decoration: none;
   background: var(colorPrimario);
 }
 .container{
     width: 85%;
     min-width: 497px;
-    height: 700px;
+    height: 800px;
     background: #ccc;
     display: grid;
     grid-template-columns: 1.2fr 3fr 1fr;
@@ -105,9 +106,22 @@ header > #box-img > #logo{
   box-shadow: 0 0 8px 0 #ccc;
 }
 .main h2{
-  margin-left: 50px;
+  margin-left: 5px;
   padding-bottom: 5px;
 }
+/* .main div img{
+  position: absolute;
+  left: 55%;
+  top: 26%;
+  visibility: hidden;
+} */
+/* #tab-2 button{
+  position: absolute;
+  left: 55%;
+  padding: 8px;
+  background: darkolivegreen;
+  color: #fff;
+} */
 
 .aside{
     display: grid;
@@ -137,7 +151,7 @@ header > #box-img > #logo{
     justify-content: center;
     align-content: center;
     width: 80%;
-    height: 100px;
+    height: 75px;
     background: #fff;
     border: 2px solid #007FFF;
     color: #4CAF50;

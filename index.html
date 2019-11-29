@@ -38,7 +38,7 @@
           <div id="tb1">
             <section class="main">
                   <div id="tab-1">
-                    <h2>Molaridad</h2>
+                    <h3>Molaridad</h3>
                     <form id="form" action="">
                         <label for="soluto">Soluto</label>
                         <input type="text" name="" id="soluto" placeholder="Moles de soluto">
@@ -49,7 +49,9 @@
                     </form>
                   </div>
                   <div id="tab-2">
-                    <h2>molalidad</h2>
+                    <h3>molalidad</h3>
+                    <!-- <button id="imgMolalidad-bt" type="button" name="button">Ver Formula</button>
+                    <img id="imgMolalidad" src="img/molalidad.jpg" alt="formula molalidad"> -->
                     <form id="form" action="">
                         <label for="soluto">Soluto</label>
                         <input type="text" name="" id="solutoMola" placeholder="Moles de soluto">
@@ -58,27 +60,44 @@
                         <div class="resMol" id="respMolalidad"></div>
                         <input type="button" value="Enviar" onclick="molalidad();">
                     </form>
+
                   </div>
                   <div id="tab-3">
-                    <h2>Fracción Masa Masa</h2>
+                    <h3>Porcentaje Masa Masa</h3>
                     <form id="form" action="">
                         <label for="solutoMM">Soluto</label>
                         <input type="text" name="" id="solutoMM" placeholder="Gramos de soluto">
                         <label for="solucion">Solvente</label>
                         <input type="text" name="" id="solucionMM" placeholder="Gramos de solucion">
-                        <div class="resMol" id="resp"></div>
-                        <input type="button" value="Enviar" onclick="">
+                        <div class="resMol" id="respMM"></div>
+                        <input type="button" value="Enviar" onclick="masaMasa();">
                     </form>
                   </div>
                   <div id="tab-4">
-                    <!-- <form id="form" action="">
+                    <h3>Porcentaje Masa Volumen</h3>
+                    <form id="form" action="">
                         <label for="soluto">Soluto</label>
-                        <input type="text" name="" id="soluto" placeholder="Gramos de soluto">
+                        <input type="text" name="" id="solutoMV" placeholder="Gramos de soluto">
                         <label for="solucion">Solucion</label>
-                        <input type="text" name="" id="solucion" placeholder="Gramos de solucion">
-                        <div class="resMol" id="resp"></div>
-                        <input type="button" value="Enviar" id="bt-send">
-                    </form> -->
+                        <input type="text" name="" id="disolucionMV" placeholder="Vol. disolucion (ml)">
+                        <div class="resMol" id="respMV"></div>
+                        <input type="button" value="Enviar" onclick="masaVol();">
+                    </form>
+                  </div>
+                  <div id="tab-5">
+                    <h3>Normalidad</h3>
+                    <form id="form" action="">
+                        <label for="gramosSN">Soluto</label>
+                        <input type="text" name="" id="gramosSN" placeholder="Gramos de soluto">
+                        <label for="equivN">Equivalente</label>
+                        <input type="text" name="" id="equivN" placeholder="Equiv. de soluto">
+                        <label for="pesoN">Peso M</label>
+                        <input type="text" name="" id="pesoN" placeholder="Peso Molecular">
+                        <label for="solventeN">Solvente</label>
+                        <input type="text" name="" id="solventeN" placeholder="Vol. solucion (ml)">
+                        <div class="resMol" id="respNor"></div>
+                        <input type="button" value="Enviar" onclick="normalidad();">
+                    </form>
                   </div>
             </section>
 
@@ -88,6 +107,7 @@
                     <li><a href="#tab-2">(m)</a></li>
                     <li><a href="#tab-3">% m/m</a></li>
                     <li><a href="#tab-4">% m/v</a></li>
+                    <li><a href="#tab-5">(N)</a></li>
                   </ul>
             </aside>
           </div>

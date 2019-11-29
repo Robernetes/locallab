@@ -37,22 +37,70 @@ function molalidad(){
     };
     limpiar2();
 }
-
+//Limpiar entradas de porcentage masa masa
+function limpiar3(){
+    document.getElementById('solutoMM').value = "";
+    document.getElementById('solucionMM').value = "";
+    console.log('Limpiar ready');
+}
+//Funcion para Porecentage masa masa
 function masaMasa(){
     var soluto1 = parseFloat(document.getElementById('solutoMM').value);
-    var solucion1 = parseFloat(document.getElementById('solucionMM').value);
-    var solucionSuma = soluto1 + solucion1;
-    var resMMsuma = (soluto1/solucionSuma) * 100;
-    console.log(resMMsuma);
+    var solvente1 = parseFloat(document.getElementById('solucionMM').value);
+    var solucionSuma = soluto1 + solvente1;
+    var resMM = (soluto1/solucionSuma) * 100;
+    console.log(resMM);
     console.log("Molalidad ready");
-    if(isNaN(resMolali)){
-        document.getElementById('respMolalidad').innerText = "Ingresa valores ";
+    if(isNaN(resMM)){
+        document.getElementById('respMM').innerText = "Ingresa valores ";
     }else{
-        document.getElementById('respMolalidad').innerText = "Molalidad "+resMMsuma.toFixed(2);
+        document.getElementById('respMM').innerText = "% m/m "+resMM.toFixed(2);
     };
-    limpiar2();
+    limpiar3();
 }
-
+function limpiar4(){
+    document.getElementById('solutoMV').value = "";
+    document.getElementById('disolucionMV').value = "";
+    console.log('Limpiar ready');
+}
+//Funcion para Porcentage masa volumen
+function masaVol(){
+    var soluto2 = parseFloat(document.getElementById('solutoMV').value);
+    var disolucion = parseFloat(document.getElementById('disolucionMV').value);
+    var resMV = (soluto2/disolucion) * 100;
+    console.log(resMV);
+    console.log("Molalidad ready");
+    if(isNaN(resMV)){
+        document.getElementById('respMV').innerText = "Ingresa valores ";
+    }else{
+        document.getElementById('respMV').innerText = "% m/v "+resMV.toFixed(2);
+    };
+    limpiar4();
+}
+//Funcion para limpiar entradas de Normalidad
+function limpiar5(){
+    document.getElementById('gramosSN').value = "";
+    document.getElementById('equivN').value = "";
+    document.getElementById('pesoN').value = "";
+    document.getElementById('solventeN').value = "";
+    console.log('Limpiar ready');
+}
+//Funcion para Normalidad
+function normalidad(){
+    var gSoluto = parseFloat(document.getElementById('gramosSN').value);
+    var equiv = parseFloat(document.getElementById('equivN').value);
+    var pMole = parseFloat(document.getElementById('pesoN').value);
+    var solvNor = parseFloat(document.getElementById('solventeN').value);
+    var resNor = (gSoluto * 1000 * equiv) / (pMole * solvNor);
+    console.log(resNor);
+    console.log("Molalidad ready");
+    if(isNaN(resNor)){
+        document.getElementById('respNor').innerText = "Ingresa valores ";
+    }else{
+        document.getElementById('respNor').innerText = "Normalidad "+resNor.toFixed(2);
+    };
+    limpiar5();
+}
 
 
 
@@ -77,5 +125,6 @@ $(document).ready(function() {
   $( function() {
       $( "#tb3" ).tabs();
   });
+
 
 });
