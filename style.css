@@ -15,11 +15,11 @@ a{
 .container{
     width: 85%;
     min-width: 497px;
-    height: 800px;
+    height: 1000px;
     background: #ccc;
     display: grid;
     grid-template-columns: 1.2fr 3fr 1fr;
-    grid-template-rows:2fr .5fr 5fr .7fr;
+    grid-template-rows:2fr .5fr 5fr 3fr;
     grid-gap: .9em;
     margin: auto;
     box-sizing: border-box;
@@ -96,6 +96,7 @@ header > #box-img > #logo{
   grid-column: 1/-1;
   grid-row: 2/3;
   background: #fff;
+  box-shadow: 0 0 6px 0 #ccc;
 }
 .main{
   margin: 0;
@@ -110,6 +111,12 @@ header > #box-img > #logo{
 .main h2{
   margin-left: 5px;
   padding-bottom: 5px;
+}
+.main div a{
+  color: darkolivegreen;
+}
+.main div a:hover{
+  color: dodgerblue;
 }
 /* .main div img{
   position: absolute;
@@ -140,7 +147,36 @@ header > #box-img > #logo{
   display: grid;
   grid-column: 1/-1;
   grid-row: 4/5;
-  background: #333;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 0 6px 0 #ccc;
+}
+.footer div img{
+  width: 200px;
+  height: 200px;
+}
+.footer div{
+  position: relative;
+}
+.footer div > span{
+  position: absolute;
+  left: 19%;
+  bottom: 7px;
+}
+.footer div p{
+  display: grid;
+  grid-column: 2/span 2
+}
+.footer section{
+  display: grid;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  text-align: center;
+}
+.footer section p a{
+  color: dodgerblue;
 }
 
 .aside > ul{

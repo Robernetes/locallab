@@ -50,7 +50,7 @@ function masaMasa(){
     var solucionSuma = soluto1 + solvente1;
     var resMM = (soluto1/solucionSuma) * 100;
     console.log(resMM);
-    console.log("Molalidad ready");
+    console.log("Porcentaje masa masa ready");
     if(isNaN(resMM)){
         document.getElementById('respMM').innerText = "Ingresa valores ";
     }else{
@@ -69,7 +69,7 @@ function masaVol(){
     var disolucion = parseFloat(document.getElementById('disolucionMV').value);
     var resMV = (soluto2/disolucion) * 100;
     console.log(resMV);
-    console.log("Molalidad ready");
+    console.log("Porcentaje Masa Volumen ready");
     if(isNaN(resMV)){
         document.getElementById('respMV').innerText = "Ingresa valores ";
     }else{
@@ -93,7 +93,7 @@ function normalidad(){
     var solvNor = parseFloat(document.getElementById('solventeN').value);
     var resNor = (gSoluto * 1000 * equiv) / (pMole * solvNor);
     console.log(resNor);
-    console.log("Molalidad ready");
+    console.log("Normalidad ready");
     if(isNaN(resNor)){
         document.getElementById('respNor').innerText = "Ingresa valores ";
     }else{
@@ -113,7 +113,7 @@ function molesTog(){
     var pMol = parseFloat(document.getElementById('pMolecular').value);
     var resGramos = (moles1 * pMol) / 1;
     console.log(resGramos);
-    console.log("Molalidad ready");
+    console.log("Moles to gramos ready");
     if(isNaN(resGramos)){
         document.getElementById('respG').innerText = "Ingresa valores ";
     }else{
@@ -133,7 +133,7 @@ function gramosToMol(){
     var pMol2 = parseFloat(document.getElementById('pMolecular2').value);
     var resMoles = (gramosFor * 1) / pMol2;
     console.log(resMoles);
-    console.log("Molalidad ready");
+    console.log("Gramos to Moles ready");
     if(isNaN(resMoles)){
         document.getElementById('respMoles').innerText = "Ingresa valores ";
     }else{
