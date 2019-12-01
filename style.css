@@ -15,11 +15,11 @@ a{
 .container{
     width: 85%;
     min-width: 497px;
-    height: 1030px;
+    height: 900px;
     background: #ccc;
     display: grid;
     grid-template-columns: 1.2fr 3fr 1fr;
-    grid-template-rows:2fr .5fr 5fr 3fr;
+    grid-template-rows:2fr .5fr 5fr .5fr;
     grid-gap: .9em;
     margin: auto;
     box-sizing: border-box;
@@ -148,7 +148,7 @@ header > #box-img > #logo{
   grid-column: 1/-1;
   grid-row: 4/5;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 5fr 1fr;
+  grid-template-rows: 1fr;
   background: #fff;
   color: #333;
   box-shadow: 0 0 6px 0 #ccc;
@@ -231,5 +231,4 @@ header > #box-img > #logo{
   margin: auto !important;
 }
 /* @media screen and (min-width: 320px) and (max-width: 414px){
-
 } */
