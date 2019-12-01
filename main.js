@@ -154,26 +154,6 @@ $(document).ready(function() {
   });
 
   $( function() {
-<<<<<<< HEAD
-      $( "#tabs-1" ).tabs();
-  });
-
-  $( function() {
-      $( "#tabs-2" ).tabs();
-  });
-
-  $( function() {
-      $( "#tb1" ).tabs();
-  });
-
-  $( function() {
-      $( "#tb2" ).tabs();
-  });
-
-  $( function() {
-      $( "#tb3" ).tabs();
-  });
-=======
       $( "#tb1" ).tabs();
   });
 
@@ -186,5 +166,4 @@ $(document).ready(function() {
   });
 
 
->>>>>>> gh-pages
 });

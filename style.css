@@ -9,10 +9,7 @@ body{
   background: #ccc;
 }
 a{
-<<<<<<< HEAD
-=======
   text-decoration: none;
->>>>>>> gh-pages
   background: var(colorPrimario);
 }
 .container{
@@ -36,13 +33,8 @@ a{
   grid-template-rows: 1fr;
 }
 .container-2 > #tb1, #tb2, #tb3{
-<<<<<<< HEAD
-  /* margin: 0;
-  padding: 0; */
-=======
   margin: 0;
   padding: 0;
->>>>>>> gh-pages
   display: grid;
   grid-column: 1/-1;
   grid-row: 1;
@@ -238,15 +230,5 @@ header > #box-img > #logo{
   text-align: center;
   margin: auto !important;
 }
-<<<<<<< HEAD
-#esilosSection2{
-  display: block;
-  padding: 20px;
-  background: dodgerblue;
-  margin: auto;
-}
-=======
 /* @media screen and (min-width: 320px) and (max-width: 414px){
-
 } */
->>>>>>> gh-pages
