@@ -9,15 +9,20 @@ body{
   background: #ccc;
 }
 a{
+<<<<<<< HEAD
+=======
+  text-decoration: none;
+>>>>>>> gh-pages
   background: var(colorPrimario);
 }
 .container{
     width: 85%;
-    height: 700px;
+    min-width: 497px;
+    height: 1030px;
     background: #ccc;
     display: grid;
     grid-template-columns: 1.2fr 3fr 1fr;
-    grid-template-rows:2fr .5fr 5fr .7fr;
+    grid-template-rows:2fr .5fr 5fr 3fr;
     grid-gap: .9em;
     margin: auto;
     box-sizing: border-box;
@@ -31,13 +36,20 @@ a{
   grid-template-rows: 1fr;
 }
 .container-2 > #tb1, #tb2, #tb3{
+<<<<<<< HEAD
   /* margin: 0;
   padding: 0; */
+=======
+  margin: 0;
+  padding: 0;
+>>>>>>> gh-pages
   display: grid;
   grid-column: 1/-1;
   grid-row: 1;
   grid-template-columns: 1.2fr 3fr 1fr;
   grid-template-rows: 1fr;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 
@@ -92,19 +104,47 @@ header > #box-img > #logo{
   grid-column: 1/-1;
   grid-row: 2/3;
   background: #fff;
+  box-shadow: 0 0 6px 0 #ccc;
 }
 .main{
-    display: grid;
-    grid-column: 2/4 !important;
-    grid-row: 1;
-    background: #fff;
-    box-shadow: 0 0 8px 0 #ccc;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-column: 2/4 !important;
+  grid-row: 1;
+  min-width: 249px;
+  background: #fff;
+  box-shadow: 0 0 8px 0 #ccc;
 }
+.main h2{
+  margin-left: 5px;
+  padding-bottom: 5px;
+}
+.main div a{
+  color: darkolivegreen;
+}
+.main div a:hover{
+  color: dodgerblue;
+}
+/* .main div img{
+  position: absolute;
+  left: 55%;
+  top: 26%;
+  visibility: hidden;
+} */
+/* #tab-2 button{
+  position: absolute;
+  left: 55%;
+  padding: 8px;
+  background: darkolivegreen;
+  color: #fff;
+} */
 
 .aside{
     display: grid;
     grid-column: 1/2;
     grid-row: 1;
+    min-width: 97px;
     background: #fff;
     color: black;
     box-shadow: 0 0 8px 0 #ccc;
@@ -115,7 +155,36 @@ header > #box-img > #logo{
   display: grid;
   grid-column: 1/-1;
   grid-row: 4/5;
-  background: #333;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 0 6px 0 #ccc;
+}
+.footer div img{
+  width: 200px;
+  height: 200px;
+}
+.footer div{
+  position: relative;
+}
+.footer div > span{
+  position: absolute;
+  left: 15%;
+  bottom: 7px;
+}
+.footer div p{
+  display: grid;
+  grid-column: 2/span 2
+}
+.footer section{
+  display: grid;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  text-align: center;
+}
+.footer section p a{
+  color: dodgerblue;
 }
 
 .aside > ul{
@@ -128,7 +197,7 @@ header > #box-img > #logo{
     justify-content: center;
     align-content: center;
     width: 80%;
-    height: 100px;
+    height: 75px;
     background: #fff;
     border: 2px solid #007FFF;
     color: #4CAF50;
@@ -169,9 +238,15 @@ header > #box-img > #logo{
   text-align: center;
   margin: auto !important;
 }
+<<<<<<< HEAD
 #esilosSection2{
   display: block;
   padding: 20px;
   background: dodgerblue;
   margin: auto;
 }
+=======
+/* @media screen and (min-width: 320px) and (max-width: 414px){
+
+} */
+>>>>>>> gh-pages
