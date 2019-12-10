@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     --colorPrimario: dodgerblue;
     --colorSecundario: #193455;
 }
@@ -22,7 +23,8 @@ a{
     grid-template-rows:2fr .5fr 5fr .5fr;
     grid-gap: .9em;
     margin: auto;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     /* overflow-x: hidden; */
 }
 .container-2{
@@ -40,7 +42,8 @@ a{
   grid-row: 1;
   grid-template-columns: 1.2fr 3fr 1fr;
   grid-template-rows: 1fr;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -70,7 +73,8 @@ a{
     font-size: 50px;
     color: snow;
     /* justify-content: center; */
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     /* box-shadow: 0 0 8px 0 dodgerblue; */
     margin: auto;
 }
@@ -96,7 +100,8 @@ header > #box-img > #logo{
   grid-column: 1/-1;
   grid-row: 2/3;
   background: #fff;
-  box-shadow: 0 0 6px 0 #ccc;
+  -webkit-box-shadow: 0 0 6px 0 #ccc;
+          box-shadow: 0 0 6px 0 #ccc;
 }
 .main{
   margin: 0;
@@ -106,7 +111,8 @@ header > #box-img > #logo{
   grid-row: 1;
   min-width: 249px;
   background: #fff;
-  box-shadow: 0 0 8px 0 #ccc;
+  -webkit-box-shadow: 0 0 8px 0 #ccc;
+          box-shadow: 0 0 8px 0 #ccc;
 }
 .main h2{
   margin-left: 5px;
@@ -139,7 +145,8 @@ header > #box-img > #logo{
     min-width: 97px;
     background: #fff;
     color: black;
-    box-shadow: 0 0 8px 0 #ccc;
+    -webkit-box-shadow: 0 0 8px 0 #ccc;
+            box-shadow: 0 0 8px 0 #ccc;
     overflow: auto;
 }
 
@@ -151,7 +158,8 @@ header > #box-img > #logo{
   grid-template-rows: 1fr;
   background: #fff;
   color: #333;
-  box-shadow: 0 0 6px 0 #ccc;
+  -webkit-box-shadow: 0 0 6px 0 #ccc;
+          box-shadow: 0 0 6px 0 #ccc;
 }
 .footer div img{
   width: 200px;
@@ -186,8 +194,11 @@ header > #box-img > #logo{
 
 .resMol{
     display: grid;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 80%;
     height: 75px;
     background: #fff;
@@ -199,8 +210,10 @@ header > #box-img > #logo{
   width: 230px;
   padding: 10px;
   /* border: 2px solid #ccc; */
-  box-shadow: 0 0 8px 0 #ccc;
-  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 8px 0 #ccc;
+          box-shadow: 0 0 8px 0 #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 #form > label, input{
   width: 80%;
